@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "commons-cli-1.2 (1).jar",
+        "commons-logging-1.2 (1).jar",
+        "hadoop-common-2.6.0-cdh5.15.1 (1).jar",
+        "hadoop-mapreduce-client-core-2.6.0-cdh5.15.1 (1).jar"
+    ]
+}
