@@ -79,7 +79,7 @@ public class LeastFive {
             long count = 0;
 
             for (LongWritable val : values) {
-                count = val.get();
+                count += val.get();
             }
 
             // insert data into treeMap,
@@ -122,6 +122,7 @@ public class LeastFive {
   
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(LongWritable.class);
+        job.setNumReduceTasks(1);
   
         job.setOutputKeyClass(LongWritable.class);
         job.setOutputValueClass(Text.class);
